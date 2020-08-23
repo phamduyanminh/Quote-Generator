@@ -10,7 +10,7 @@ function getQuote() {
    fetch(apiWebsite)
      .then((res) => res.json())
      .then((data) => {
-       quote.innerHTML = `"${data.content}"`;
+       quote.innerHTML = `${data.content}`;
        author.innerHTML = `- ${data.author}`;
      });
  }
